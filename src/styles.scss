@@ -1,1 +1,148 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Colorful icon */
+.material-icons.md-primary-color { color: var(--primary-color); }
+
+
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Alef, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background: #fff;
+  color: var(--dark-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  &:hover {
+  color: #666;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: .4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: .5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+table th {
+  background: var(--light-color);
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  color: #333;
+  padding: .4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: .5rem;
+  transition: opacity .2s;
+  outline: none;
+
+  &:disabled {
+    background: var(--dark-color);
+    color: #fff;
+    cursor: not-allowed;
+  }
+
+  //work only if button not disabled
+  &:hover:not(:disabled) {
+    opacity: .8;
+    color: var(--primary-color);
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

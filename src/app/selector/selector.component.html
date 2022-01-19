@@ -1,0 +1,9 @@
+<div>
+  <i class="material-icons" (click)="go(-1)">arrow_left</i>
+  <span>
+<!--    dateService.date is a stream so we pass him to async pipe and then to moment pipe-->
+<!--    {{ dateService.date | async | moment  }} should be like this -->
+    {{ dateService.date| async | moment  }}
+  </span>
+  <i class="material-icons" (click)="go(1)">arrow_right</i>
+</div>
